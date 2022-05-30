@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(89, 159, 216);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section {
+    background-color: white;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.425);
+    padding: 15px;
+    margin: auto;
+}
+div{
+    text-align: center;
+    padding: 8px;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+footer{
+    color: white;
+    text-align: center;
+}
+#imagem {
+    border-radius: 50%;
+}

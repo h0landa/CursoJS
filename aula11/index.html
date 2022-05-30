@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multa JS</title>
+</head>
+<body>
+    <h1>Calculo de Velocidade</h1>
+    <label for="vel">Velocidade do Carro</label>
+    <input type="number" id="vel"> <strong>Km/h</strong>
+    <button type="submit" id="verificar" onclick="calcular()">Verificar</button>
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular(){
+            var velocidade = document.getElementById('vel')
+            var resultado = window.document.getElementById('res')
+            resultado.innerHTML = `<p>Sua velocidade é de ${velocidade.value}Km/h</p>`
+            if (Number(velocidade.value) > 60){
+                resultado.innerHTML = `<p>Você ultrapassou o limite de velocidade e foi <strong>MULTADO</strong></p>`
+            }
+            else{
+                resultado.innerHTML += '<p>Diriga com cuidado e use cinto de segurança.</p>'
+            }
+        }
+    </script>
+</body>
+</html>
