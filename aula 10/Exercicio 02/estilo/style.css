@@ -1,0 +1,16 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#result{
+    margin-top: 10px;
+}
+#n1 {
+    font-size: 1em;
+    width: 150px;
+    height: 20px;
+}
+#n2 {
+    font-size: 1em;
+    width: 150px;
+    height: 20px;
+}

@@ -1,0 +1,10 @@
+#box {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(147, 147, 216);
+}
+#caixinha {
+    line-height: 200px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

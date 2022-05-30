@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Eventos DOM</title>
+</head>
+<body>
+    <div id="box">
+        <p id="caixinha">CAIXINHA</p>
+    </div>
+    <script>
+        var c = document.getElementById('box')
+        c.addEventListener('click', clicar)
+        c.addEventListener('mouseenter', entrar)
+        c.addEventListener('mouseout', sair)
+        function entrar(){
+            c.style.background = 'rgb(72, 72, 128)'
+        }
+        function clicar(){
+            c.style.background = 'black'
+            c.style.color = 'white'
+        }
+        function sair(){
+            c.style.background = 'rgb(147, 147, 216)'
+        }
+    </script>
+</body>
+</html>
