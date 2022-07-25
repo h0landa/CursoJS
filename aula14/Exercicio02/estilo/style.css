@@ -25,6 +25,7 @@ footer{
     font-weight: bold;
 }
 #res{
+    padding: 3px;
     margin-top: 10px;
     font-weight: bold;
     height: 200px;
@@ -32,4 +33,5 @@ footer{
     overflow: auto;
     border: 1px solid;
     border-radius: 7px;
+    font-size: 10pt;
 }

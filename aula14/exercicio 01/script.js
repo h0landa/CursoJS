@@ -5,14 +5,21 @@ function contar(){
     var fim = Number(document.getElementById('fim').value)
     var passo = Number(document.getElementById('passo').value)
     var ini = Number(document.getElementById('inicio').value)
-    if (ini > fim){
+    if(document.getElementById("inicio").value.length == 0 || document.getElementById("fim").value.length == 0 || document.getElementById("passo").value.length == 0){
         resultado.style.color = 'red'
         resultado.innerText = 'IMPOSSIVEL CONTAR'
-    }
-    else{
-        for (ini; ini <= fim; ini+=passo){
-            resultado.innerText += `${ini} 👉`
+    }else{
+        if(ini < fim){
+            for (ini; ini <= fim; ini+=passo){
+                resultado.innerText += `${ini} 👉`
+            }
+            resultado.innerText += '🏁'
         }
-        resultado.innerText += '🏁'
+        else{
+            for (ini; ini >= fim; ini-=passo){
+                resultado.innerText += `${ini} 👉`
+            }
+            resultado.innerText += '🏁'
+        }
     }
 }
